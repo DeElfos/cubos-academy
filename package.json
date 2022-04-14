@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "npx tsc index.ts",
     "transp": "npx ts-node index.ts",
-    "ex1": "npx ts-node 01/index.ts"
+    "ex1": "npx ts-node 01/index.ts",
+    "ex2": "npx ts-node 02/index.ts"
   },
   "keywords": [],
   "author": "",

@@ -9,7 +9,8 @@
     "transp": "npx ts-node index.ts",
     "ex1": "npx ts-node 01/index.ts",
     "ex2": "npx ts-node 02/index.ts",
-    "ex3": "npx ts-node 03/index.ts"
+    "ex3": "npx ts-node 03/index.ts",
+    "ex4": "npx ts-node 04/index.ts"
   },
   "keywords": [],
   "author": "",

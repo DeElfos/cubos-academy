@@ -1,10 +1,6 @@
 let find_book = (list_books: string [], book_to_locale: string): null | string  => {
-    for (let book in list_books) {
-        if (list_books[ book ] === book_to_locale) {
-            return 'O livro está na posição ' + (Number(book) + 1);
-        }
-    }
-    return null
+    const posicao: number = list_books.indexOf(book_to_locale)
+    return posicao === -1 ? 'Livro não encontrado' : `O livro está na posição ${ posicao + 1 } `
 }
 
 let estante: string [] = [
@@ -16,4 +12,5 @@ let estante: string [] = [
 ]
 
 console.log(find_book(estante, 'Cem Anos de Solidão'))
+console.log(find_book(estante, 'Jogador numero 1'))
 

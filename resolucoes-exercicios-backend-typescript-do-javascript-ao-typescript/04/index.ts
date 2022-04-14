@@ -1,11 +1,8 @@
 let cities_length_8 = (cities_list: string []): string []  => {
-    let new_list: string [] = [];
-    for (const city of cities_list) {
-        if( (city.length <= 8) ) {
-            new_list.push(city);
-        }
-    }
-
+    let new_list = cities_list.filter( (city) => {
+        return city.length <= 8
+    })
+    
     return new_list
 }
 

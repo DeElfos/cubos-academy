@@ -1,10 +1,7 @@
 let filter_even_numbers = (list_of_numbers: number[]): number[]  => {
-    let new_array: number[] = []
-    for (const number of list_of_numbers) {
-        if( number % 2 === 0 ) {
-            new_array.push( number)
-        }
-    }
+    let new_array = list_of_numbers.filter( (number) => {
+        return number % 2 === 0
+    })
 
     return new_array
 }

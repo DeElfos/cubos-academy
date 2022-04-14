@@ -1,4 +1,4 @@
-let filter_even_numbers = (list_of_numbers: number[]) => {
+let filter_even_numbers = (list_of_numbers: number[]): number[]  => {
     let new_array: number[] = []
     for (const number of list_of_numbers) {
         if( number % 2 === 0 ) {

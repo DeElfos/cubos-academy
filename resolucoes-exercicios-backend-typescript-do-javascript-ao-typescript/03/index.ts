@@ -1,12 +1,12 @@
-let identify_even_numbers = (numbers: number []) => {
+let identify_even_numbers = (numbers: number []): boolean => {
     for (const number of numbers) {
         if( !(number % 2 === 0) ) {
-            return;
+            return false;
         }
     }
-    return false;
+    return true;
 }
 
-let list_numbers: number[] = [0, 122, 4, 6, 862, 8, 44]
+let list_numbers: number[] = [0, 122, 4, 6, 268, 8, 44]
 
-identify_even_numbers(list_numbers) ?? console.log("array inválido");
+if(!identify_even_numbers(list_numbers)) { console.log("array inválido") }

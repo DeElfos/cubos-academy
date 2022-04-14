@@ -1,4 +1,4 @@
-let find_book = (list_books: string [], book_to_locale: string) => {
+let find_book = (list_books: string [], book_to_locale: string): null | string  => {
     for (let book in list_books) {
         if (list_books[ book ] === book_to_locale) {
             return 'O livro está na posição ' + (Number(book) + 1);

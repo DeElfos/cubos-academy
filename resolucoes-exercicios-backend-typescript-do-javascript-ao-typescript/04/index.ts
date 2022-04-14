@@ -1,4 +1,4 @@
-let cities_length_8 = (cities_list: string []) => {
+let cities_length_8 = (cities_list: string []): string []  => {
     let new_list: string [] = [];
     for (const city of cities_list) {
         if( (city.length <= 8) ) {
